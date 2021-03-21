@@ -1,0 +1,17 @@
+{
+    "name": "popschool/justine-test2",
+    "description": "starter plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "JustineMiko",
+            "email": "justinemarzec@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}
