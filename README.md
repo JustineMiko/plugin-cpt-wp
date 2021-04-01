@@ -3,3 +3,4 @@
 This plugin generates text posts / CPT Manager
 
 
+# wp-plugin
