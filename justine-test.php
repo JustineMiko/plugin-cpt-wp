@@ -27,10 +27,28 @@ defined( 'ABSPATH' ) or die( 'Hey, you cannot access this file' );
 //     exit;
 // }
 
-//Autoload : 
+// Require once the Composer Autoload : 
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
     require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
+
+/**
+ * The code that runs during plugin activation
+ */
+function activate_justine_plugin() {
+    Inc\Base\Activate::activate();
+}
+register_activation_hook( __FILE__, 'activate_justine_plugin' );
+
+
+/**
+ * The code that runs during plugin deactivation
+ */
+function deactivate_justine_plugin() {
+    Inc\Base\Deactivate::deactivate();
+}
+register_deactivation_hook( __FILE__, 'deactivate_justine_plugin' );
+
 
 if ( class_exists( 'Inc\\Init' ) ) {
     Inc\Init::register_services();

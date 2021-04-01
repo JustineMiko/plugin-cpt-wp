@@ -1,3 +1,5 @@
 # Creation of a Wordpress plugin
 
-## This plugin generates text posts
+This plugin generates text posts / CPT Manager
+
+
